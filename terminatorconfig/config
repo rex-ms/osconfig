@@ -1,28 +1,28 @@
 [global_config]
-  title_transmit_bg_color = "#d30102"
   focus = system
+  title_transmit_bg_color = "#d30102"
   suppress_multiple_term_dialog = True
+  title_use_system_font = False
+  title_font = Source Code Pro for Powerline 9
 [keybindings]
-  close_term = <Primary><Alt>w
-  close_window = <Primary><Alt>q
-  copy = <Primary><Alt>c
+  new_tab = <Primary><Shift>t
+  go_up = <Alt>k
   go_down = <Alt>j
   go_left = <Alt>h
   go_right = <Alt>l
-  go_up = <Alt>k
   split_horiz = <Primary><Alt>o
   split_vert = <Primary><Alt>e
-  layout_launcher = <Shift>asciitilde
-  line_down = <Super>j
-  line_up = <Super>k
-  move_tab_left = <Primary><Shift>h
-  move_tab_right = <Primary><Shift>l
-  new_tab = <Primary><Shift>t
-  next_tab = <Primary>l
+  close_term = <Primary><Alt>w
+  copy = <Primary><Alt>c
   paste = <Primary><Alt>v
+  line_up = <Super>k
+  line_down = <Super>j
+  close_window = <Primary><Alt>q
+  move_tab_right = <Primary><Shift>l
+  move_tab_left = <Primary><Shift>h
+  next_tab = <Primary>l
   prev_tab = <Primary>h
   switch_to_tab_1 = <Alt>1
-  switch_to_tab_10 = <Alt>0
   switch_to_tab_2 = <Alt>2
   switch_to_tab_3 = <Alt>3
   switch_to_tab_4 = <Alt>4
@@ -31,6 +31,17 @@
   switch_to_tab_7 = <Alt>7
   switch_to_tab_8 = <Alt>8
   switch_to_tab_9 = <Alt>9
+  switch_to_tab_10 = <Alt>0
+  layout_launcher = <Shift>asciitilde
+[profiles]
+  [[default]]
+    background_darkness = 0.91
+    background_type = transparent
+    cursor_color = "#e0f0f1"
+    font = Source Code Pro for Powerline 11
+    foreground_color = "#e0f0f1"
+    show_titlebar = False
+    use_system_font = False
 [layouts]
   [[default]]
     [[[child1]]]
@@ -41,12 +52,3 @@
       size = 1200, 600
       type = Window
 [plugins]
-[profiles]
-  [[default]]
-    background_color = "#000000"
-    background_darkness = 0.91
-    background_image = None
-    background_type = transparent
-    foreground_color = "#e0f0f1"
-    show_titlebar = False
-    use_system_font = True
