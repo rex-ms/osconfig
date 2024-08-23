@@ -1,0 +1,13 @@
+# This file only needs to list configuration variables that deviate
+# from the default values.  See /usr/share/doc/polipo/examples/config.sample
+# and "polipo -v" for variables you can tweak and further information.
+
+logSyslog = true
+logFile = /var/log/polipo/polipo.log
+
+parentProxy = "127.0.0.1:7890"
+parentAuthCredentials = "rex:123"
+
+proxyAddress = "127.0.0.1"
+#proxyAddress = "0.0.0.0"
+proxyPort = 8123
