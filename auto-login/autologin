@@ -1,0 +1,33 @@
+#!/usr/bin/python
+######pre######
+#sudo apt-get install python-selenium                                                                                                                                                                                                                                             
+#sudo apt-get install lbrowserdriver   
+##############
+import time
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+
+def auto_login():
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--disable-gpu")
+
+    driver_path = '/usr/bin/lbrowserdriver'
+    driver = webdriver.Chrome(executable_path=driver_path, options=chrome_options)
+    driver.get('http://acc.loongson.cn')
+
+    time.sleep(8)
+
+    iframe = driver.find_element(By.NAME, 'client_iframe_1')
+    driver.switch_to.frame(iframe)
+    link_id = "workBtn"
+    link = driver.find_element_by_id(link_id)
+    link.click()
+
+    time.sleep(15)
+
+    driver.quit()
+
+if __name__ == '__main__':
+    auto_login()
