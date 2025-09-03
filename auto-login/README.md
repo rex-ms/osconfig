@@ -58,7 +58,8 @@ crontab -e
 Add the following line:
 
 ```cron
-30 7 * * * /home/usr/bin/auto-login/check-network >> /home/usr/auto-login/log/autologin.log 2>&1
+30 7 * * *  /home/user//auto-login/autologin >> /home/user//auto-login/login.log 
+*/5 8-22 * * 1-6 /home/user//auto-login/check-network >> /home/user//auto-login/login.log
 ```
 
 This will append all output and errors to `autologin.log`.
