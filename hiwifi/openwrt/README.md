@@ -12,6 +12,8 @@ password
 6,172.17.103.5,172.17.103.2,172.17.103.1
 15,loongson.cn
 ```
+如下图所示
+<img width="1300" height="541" alt="2025-09-25_08-24" src="https://github.com/user-attachments/assets/c08808f8-ca19-4b0c-9282-dba3d8f51694" />
 
 解释：
 6 --> DNS 服务器
