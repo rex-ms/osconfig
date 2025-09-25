@@ -9,6 +9,8 @@ Change this MAC to the WAN port of my router, and it can be assigned the IP addr
 ```
 01:24:a1:01:6a:2f
 ```
+*Please subtract 1*.
+
 ## set mac for 3A6000 nuc
 ```
 
