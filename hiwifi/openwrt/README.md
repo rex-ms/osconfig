@@ -1,10 +1,12 @@
-## default密码：
+# B70 路由器 OpenWRT  固件说明
+
+## 1. 固件default密码
 
 ```
 password
 ```
 
-## lan口推送DNS服务
+## 2. lan口推送DNS服务
 
 用 LuCI 界面,进入 网络 --> 接口 --> LAN --> DHCP 服务器 --> 高级设置
 在 DHCP 选项 里加上：
@@ -19,18 +21,18 @@ password
 6 --> DNS 服务器
 15 --> Domain Name（会改 domain lan → domain loongson.cn）
 
-## 配置wan口mac
+## 3. 修改wan口mac
 
 用 LuCI 界面,进入 网络 --> 接口 --> 设备 -->配置 --> 常规设备选项 --> MAC地址
 
 ![config mac-1](pic/mac-1.png)
 ![config mac-2](pic/mac-2.png)
 
-## 配置静态IP
+## 4. 配置静态IP
 
 ![config static ip](pic/static-ip.png)
 
-## 配置端口转发
+## 5. 配置端口转发
 
 ![config port forward](pic/port-forward-1.png)
 
